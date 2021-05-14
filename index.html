@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  *{
+    box-sizing: border-box;
+  }
+  @media (max-width:700px) {
+
+    h2 {
+      text-align: left;
+      padding-left: 60px;
+    }
+    p {
+      text-align: left;
+      left: 20px;
+    }
+    img {
+      left: 60px;
+      padding-top: 10px;
+    }
+
+    .btn {
+      position: relative;
+      left: 115px;
+    }
+    .row .box1 {
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0px;
+    }
+    .row .box3 {
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 0px;
+
+    }
+
+  }
+
+    #block {
+      display: flex;
+      padding: 7% 15%;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .box {
+      text-align: left;
+      padding: 11%;
+    }
+
+    .box1 {
+      background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .box2 {
+      background-color: hsl(184, 100%, 22%);
+    }
+
+    .box3 {
+      background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .row {
+      padding: 3% 0 3% 0;
+    }
+
+    .bcolor {
+      margin: 35% 3% auto -35%;
+    }
+
+    .bcolor1 {
+      margin: 35% 3% auto -35%;
+    }
+
+    .bcolor2 {
+      margin: 35% 3% auto -35%;
+    }
+
+    .bcolor:hover {
+      color: hsl(31, 77%, 52%);
+    }
+
+    .bcolor1:hover {
+      color: hsl(184, 100%, 22%);
+    }
+
+    .bcolor2:hover {
+      color: hsl(179, 100%, 13%);
+    }
+    .btn {
+      margin-top: 10px;
+      border-radius: 20px;
+    }
+
+    h2 {
+      padding-bottom: 1.5rem;
+      margin-left: -37px;
+      color: hsl(0, 0%, 95%);
+      font-family: 'Big Shoulders Display', cursive;
+      font-weight: 700;
+      line-height: 1;
+
+    }
+
+    p {
+      color: hsla(0, 0%, 100%, 0.75);
+      font-family: "lexend Deca";
+      font-size: 15px;
+      font-weight: 400;
+      width: 200px;
+      position: relative;
+      right: 40px;
+
+    }
+
+    img {
+      transform: translate(-40px);
+      position: relative;
+      bottom: 40px;
+      padding-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <section id=block class="d-flex">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 box box1">
+          <img src="images/icon-sedans.svg" alt="car image">
+
+          <h2>SEDANS</h2>
+          <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+            or on your next road trip.</p>
+          <button type="button" class="btn btn-outline-light bcolor">Learn more</button>
+        </div>
+
+        <div class="col-lg-4 col-md-6 box box2">
+          <img src="images/icon-suvs.svg" alt="car image">
+          <h2>SUVS</h2>
+          <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
+            and off-road adventures.</p>
+          <button type="button" class="btn btn-outline-light bcolor1">Learn more</button>
+        </div>
+        <div class="col-lg-4 col-md-6 box box3">
+          <img src="images/icon-luxury.svg" alt="car image">
+          <h2>LUXURY</h2>
+          <p>Cruise in the best car brands without the bloated prices.Enjoy the enhanced comfort of a luxury
+            rental and arrive in style.
+          </p>
+          <button type="button" class="btn btn-outline-light bcolor2">Learn more</button>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
